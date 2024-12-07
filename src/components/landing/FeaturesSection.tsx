@@ -21,12 +21,12 @@ export function FeaturesSection() {
   ]
 
   return (
-    <section id="features" className="py-20">
-      <div className="container mx-auto px-6">
+    <section id="features" className="w-full py-20 bg-gray-900">
+      <div className="w-full px-6">
         <h2 className="text-3xl font-bold text-center mb-16">
           주요 기능
         </h2>
-        <div className="grid md:grid-cols-3 gap-8">
+        <div className="grid md:grid-cols-3 gap-8 max-w-7xl mx-auto">
           {features.map((feature) => (
             <Card key={feature.title}>
               <CardContent className="pt-6 text-center">

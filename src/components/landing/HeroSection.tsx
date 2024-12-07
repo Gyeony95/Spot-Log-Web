@@ -2,8 +2,8 @@ import { Button } from "../../components/ui/button"
 
 export function HeroSection() {
   return (
-    <section className="pt-32 pb-20">
-      <div className="container mx-auto px-6 text-center">
+    <section className="pt-32 pb-20 bg-gradient-to-b from-gray-800 to-gray-900">
+      <div className="w-full px-6 text-center">
         <h1 className="text-5xl md:text-6xl font-bold mb-8">
           특별한 순간을<br/>기록하세요
         </h1>
