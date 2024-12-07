@@ -19,8 +19,8 @@ COPY --from=build /app/dist /usr/share/nginx/html
 # 필요한 경우 nginx 설정 추가
 # COPY nginx.conf /etc/nginx/conf.d/default.conf
 
-# 8002번 포트 노출
-EXPOSE 8002
+# 80번 포트 노출
+EXPOSE 80
 
 # Nginx 서버 시작
 CMD ["nginx", "-g", "daemon off;"]
