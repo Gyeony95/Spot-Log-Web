@@ -1,21 +1,21 @@
 import { Card, CardContent } from "../../components/ui/card"
-import { MapPin, Camera, Share2 } from "lucide-react"
+import { Folder, Camera, Share2 } from "lucide-react"
 
 export function FeaturesSection() {
   const features = [
     {
-      icon: MapPin,
-      title: "위치 기반 기록",
-      description: "당신이 방문한 모든 특별한 장소를 자동으로 기록하고 관리하세요."
+      icon: Folder,
+      title: "쉽고 편한 폴더 정리", 
+      description: "방문한 장소들을 폴더로 깔끔하게 정리하고 체계적으로 관리하세요."
     },
     {
       icon: Camera,
       title: "사진 및 메모",
-      description: "각 장소에 대한 사진과 메모를 추가하여 더욱 풍부한 기록을 남기세요."
+      description: "임장 시 매물의 상태와 특징을 사진과 메모로 꼼꼼하게 기록하세요."
     },
     {
       icon: Share2,
-      title: "공유하기",
+      title: "공유하기(준비중)",
       description: "친구들과 당신의 특별한 순간을 쉽게 공유하고 소통하세요."
     }
   ]
