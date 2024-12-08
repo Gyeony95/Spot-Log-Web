@@ -1,6 +1,8 @@
 import { ChevronDown, X } from 'lucide-react'
 import { cn } from '../../../lib/utils'
 import { Category } from '../types'
+import spotLogLogo from '../../../assets/spot_log_logo.png'
+import { useNavigate } from 'react-router-dom'
 
 type TemplateSidebarProps = {
   categories: Category[]
@@ -21,6 +23,8 @@ export function TemplateSidebar({
   selectedTemplateId,
   setSelectedTemplateId
 }: TemplateSidebarProps) {
+  const navigate = useNavigate()
+
   return (
     <div
       className={cn(
@@ -40,12 +44,20 @@ export function TemplateSidebar({
       {/* Sidebar */}
       <div
         className={cn(
-          "absolute left-0 top-0 h-full w-64 bg-gray-700 transform transition-transform duration-200 ease-in-out outline-none",
+          "absolute left-0 top-0 h-full w-64 bg-gray-800 transform transition-transform duration-200 ease-in-out outline-none",
           isSidebarOpen ? "translate-x-0" : "-translate-x-full",
           "md:translate-x-0 md:relative md:pointer-events-auto"
         )}
       >
         <div className="p-4">
+          {/* Logo - Home navigation */}
+          <div className="mb-4">
+            <button onClick={() => navigate('/')} className="w-full flex justify-center items-center mb-4 bg-gray-700/50">
+              <img src={spotLogLogo} alt="스팟로그 로고" className="h-12" />
+              <p className="ml-4 text-gray-100 text-lg flex items-center">스팟로그</p>
+            </button>
+          </div>
+
           {/* Close button - mobile only */}
           <div className="flex justify-between items-center mb-4 md:hidden">
             <h2 className="text-xl font-bold text-gray-100">템플릿</h2>
