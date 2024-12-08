@@ -10,12 +10,12 @@ export const commercialTemplate: TemplateStructure = {
           {
             "title": "상호명 / 부동산 이름",
             "templateType": "MultiText",
-            "initialValue": ""
+            "initialValue": "예시) OO빌딩, XX상가"
           },
           {
             "title": "주소",
             "templateType": "MultiText",
-            "initialValue": ""
+            "initialValue": "예시) 서울시 강남구 테헤란로 123"
           },
           {
             "title": "평점",
@@ -30,17 +30,17 @@ export const commercialTemplate: TemplateStructure = {
           {
             "title": "주요 고객층",
             "templateType": "MultiText",
-            "initialValue": ""
+            "initialValue": "예시) 20-30대 직장인, 인근 회사원"
           },
           {
             "title": "유동 인구",
             "templateType": "MultiText",
-            "initialValue": ""
+            "initialValue": "예시) 평일 점심 시간대 약 500명/시간"
           },
           {
             "title": "근처 경쟁 상권",
             "templateType": "MultiText",
-            "initialValue": ""
+            "initialValue": "예시) 반경 500m 내 유사 업종 3개"
           }
         ]
       },

@@ -10,12 +10,12 @@ export const basicTemplate: TemplateStructure = {
         {
           "title":"물건지 주소",
           "templateType":"MultiText",
-          "initialValue":""
+          "initialValue":"예시) 서울시 마포구 연남로 11길 43"
         },
         {
           "title":"물건 현황",
           "templateType":"MultiText",
-          "initialValue":""
+          "initialValue":"예시) 다세대주택 2층, 전용면적 59.5㎡"
         },
         {
           "title":"전체 평점",
@@ -30,52 +30,17 @@ export const basicTemplate: TemplateStructure = {
         {
           "title":"감정가",
           "templateType":"MultiText",
-          "initialValue":""
+          "initialValue":"예시) 감정가 3억 5천만원"
         },
         {
           "title":"시세 정보",
           "templateType":"MultiText",
-          "initialValue":""
+          "initialValue":"예시) 실거래가 3억 8천만원 ~ 4억 2천만원 선"
         },
         {
           "title":"최근 5년 내 최저가/ 최고가",
           "templateType":"MultiText",
-          "initialValue":""
-        }
-      ]
-    },
-    {
-      "categoryTitle":"3. 호재 / 악재",
-      "components":[
-        {
-          "title":"호재 정보",
-          "templateType":"MultiText",
-          "initialValue":""
-        },
-        {
-          "title":"악재 정보",
-          "templateType":"MultiText",
-          "initialValue":""
-        }
-      ]
-    },
-    {
-      "categoryTitle":"4. 기타 메모",
-      "components":[
-        {
-          "title":"메모 1",
-          "templateType":"MultiText",
-          "initialValue":""
-        },
-        {
-          "title":"메모 2",
-          "templateType":"MultiText",
-          "initialValue":""
-        },
-        {
-          "title":"메모 3",
-          "templateType":"MultiText",
-          "initialValue":""
+          "initialValue":"예시) 최저 2억 8천만원 (2019년) / 최고 4억 2천만원 (2023년)"
         }
       ]
     }
