@@ -15,7 +15,7 @@ export const basicTemplate: TemplateStructure = {
         {
           "title":"물건 현황",
           "templateType":"MultiText",
-          "initialValue":"예시) 다세대주택 2층, 전용면적 59.5㎡"
+          "initialValue":"예시) 다세대주택 2층, 전용면적 59.5㎡, 방2 화장실1"
         },
         {
           "title":"전체 평점",
@@ -30,17 +30,52 @@ export const basicTemplate: TemplateStructure = {
         {
           "title":"감정가",
           "templateType":"MultiText",
-          "initialValue":"예시) 감정가 3억 5천만원"
+          "initialValue":"예시) 감정가 3억 5천만원 (2023년 12월 기준)"
         },
         {
           "title":"시세 정보",
           "templateType":"MultiText",
-          "initialValue":"예시) 실거래가 3억 8천만원 ~ 4억 2천만원 선"
+          "initialValue":"예시) 실거래가 3억 8천만원 ~ 4억 2천만원 선, 호가 4억 5천만원"
         },
         {
           "title":"최근 5년 내 최저가/ 최고가",
           "templateType":"MultiText",
           "initialValue":"예시) 최저 2억 8천만원 (2019년) / 최고 4억 2천만원 (2023년)"
+        }
+      ]
+    },
+    {
+      "categoryTitle":"3. 호재 / 악재",
+      "components":[
+        {
+          "title":"호재 정보",
+          "templateType":"MultiText",
+          "initialValue":"예시) 1. 2025년 경의선 지하화 예정\n2. 인근 홍대입구역 복합환승센터 개발\n3. 연남동 도시재생사업 진행 중"
+        },
+        {
+          "title":"악재 정보",
+          "templateType":"MultiText",
+          "initialValue":"예시) 1. 주변 재건축 공사로 인한 소음\n2. 주차 공간 부족\n3. 일부 건물 노후화"
+        }
+      ]
+    },
+    {
+      "categoryTitle":"4. 기타 메모",
+      "components":[
+        {
+          "title":"메모 1",
+          "templateType":"MultiText",
+          "initialValue":""
+        },
+        {
+          "title":"메모 2",
+          "templateType":"MultiText",
+          "initialValue":""
+        },
+        {
+          "title":"메모 3",
+          "templateType":"MultiText",
+          "initialValue":""
         }
       ]
     }
