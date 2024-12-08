@@ -95,7 +95,7 @@ export function TemplateSidebar({
                       key={template.id}
                       className={cn(
                         "w-full text-left pl-9 pr-2 py-2 text-gray-400 bg-gray-800/50 hover:text-gray-100 hover:bg-gray-700/50 rounded-lg transition-colors",
-                        selectedTemplateId === template.id && "bg-gray-700 text-gray-100"
+                        selectedTemplateId === template.id && "bg-gray-600 text-gray-100"
                       )}
                       onClick={() => setSelectedTemplateId(template.id)}
                     >
