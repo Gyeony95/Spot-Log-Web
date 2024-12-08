@@ -5,7 +5,7 @@ services:
     build:
       context: .
       dockerfile: Dockerfile
-    container_name: spot-log-web
+    container_name: spot-log-container
     ports:
       - "8002:80"
     volumes:
