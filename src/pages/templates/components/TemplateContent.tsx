@@ -46,7 +46,7 @@ function TemplatePreview({ component }: TemplatePreviewProps) {
             ))}
           </div>
           <div className="flex justify-between mt-3 px-1 text-xs text-gray-500 max-w-[300px] mx-auto">
-            <span>매우 ���쁨</span>
+            <span>매우 나쁨</span>
             <span>매우 좋음</span>
           </div>
         </div>
@@ -99,16 +99,16 @@ export function TemplateContent({ selectedTemplateId }: TemplateContentProps) {
         {/* 템플릿 구조 */}
         <div className="space-y-12">
           {templateData.template.map((category, index) => (
-            <div key={index} className="bg-gray-800/20 rounded-2xl p-6 md:p-8">
-              <div className="flex items-center mb-8">
-                <div className="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center text-gray-400 font-medium mr-4 flex-shrink-0">
+            <div key={index} className="bg-gray-800/20 rounded-2xl p-4 md:p-8">
+              <div className="flex items-center mb-6 md:mb-8">
+                <div className="w-8 h-8 md:w-10 md:h-10 rounded-full bg-gray-800 flex items-center justify-center text-gray-400 font-medium mr-3 md:mr-4 flex-shrink-0">
                   {index + 1}
                 </div>
-                <h2 className="text-2xl font-medium text-gray-100">
+                <h2 className="text-xl md:text-2xl font-medium text-gray-100">
                   {category.categoryTitle}
                 </h2>
               </div>
-              <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
+              <div className="grid grid-cols-1 gap-4 md:gap-6">
                 {category.components.map((component, compIndex) => (
                   <TemplatePreview
                     key={compIndex}
