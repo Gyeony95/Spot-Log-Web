@@ -16,8 +16,15 @@ RUN npm run build
 FROM nginx:stable-alpine
 COPY --from=build /app/dist /usr/share/nginx/html
 
-# 필요한 경우 nginx 설정 추가
-# COPY nginx.conf /etc/nginx/conf.d/default.conf
+# Nginx 설정 추가 - SPA를 위한 라우팅 설정
+RUN echo 'server { \
+    listen 80; \
+    location / { \
+        root /usr/share/nginx/html; \
+        index index.html index.htm; \
+        try_files $uri $uri/ /index.html; \
+    } \
+}' > /etc/nginx/conf.d/default.conf
 
 # 80번 포트 노출
 EXPOSE 80
