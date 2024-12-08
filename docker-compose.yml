@@ -1,0 +1,13 @@
+version: '3'
+
+services:
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: spot-log-web
+    ports:
+      - "8002:80"
+    volumes:
+      - ./build:/usr/share/nginx/html
+    restart: unless-stopped 
