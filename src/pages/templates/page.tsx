@@ -7,6 +7,7 @@ import { templateData } from './data/templateData'
 export default function TemplatesPage() {
   const [activeCategory, setActiveCategory] = useState<string | null>(null)
   const [isSidebarOpen, setIsSidebarOpen] = useState(false)
+  const [selectedTemplateId, setSelectedTemplateId] = useState<string | null>(null)
 
   return (
     <div className="min-h-screen bg-gray-900">
@@ -18,8 +19,10 @@ export default function TemplatesPage() {
           setActiveCategory={setActiveCategory}
           isSidebarOpen={isSidebarOpen}
           setIsSidebarOpen={setIsSidebarOpen}
+          selectedTemplateId={selectedTemplateId}
+          setSelectedTemplateId={setSelectedTemplateId}
         />
-        <TemplateContent />
+        <TemplateContent selectedTemplateId={selectedTemplateId} />
       </div>
     </div>
   )

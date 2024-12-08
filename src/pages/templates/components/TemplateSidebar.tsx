@@ -8,6 +8,8 @@ type TemplateSidebarProps = {
   setActiveCategory: (id: string | null) => void
   isSidebarOpen: boolean
   setIsSidebarOpen: (isOpen: boolean) => void
+  selectedTemplateId: string | null
+  setSelectedTemplateId: (id: string | null) => void
 }
 
 export function TemplateSidebar({
@@ -15,7 +17,9 @@ export function TemplateSidebar({
   activeCategory,
   setActiveCategory,
   isSidebarOpen,
-  setIsSidebarOpen
+  setIsSidebarOpen,
+  selectedTemplateId,
+  setSelectedTemplateId
 }: TemplateSidebarProps) {
   return (
     <div
@@ -89,10 +93,11 @@ export function TemplateSidebar({
                   {category.templates.map((template) => (
                     <button
                       key={template.id}
-                      className="w-full text-left pl-9 pr-2 py-2 text-gray-400 bg-gray-800/50 hover:text-gray-100 hover:bg-gray-700/50 rounded-lg transition-colors"
-                      onClick={() => {
-                        alert("준비중인 기능입니다.")
-                      }}
+                      className={cn(
+                        "w-full text-left pl-9 pr-2 py-2 text-gray-400 bg-gray-800/50 hover:text-gray-100 hover:bg-gray-700/50 rounded-lg transition-colors",
+                        selectedTemplateId === template.id && "bg-gray-700 text-gray-100"
+                      )}
+                      onClick={() => setSelectedTemplateId(template.id)}
                     >
                       {template.title}
                     </button>

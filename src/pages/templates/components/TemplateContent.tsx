@@ -1,6 +1,8 @@
 import { cn } from '../../../lib/utils'
-import { TemplateComponent, TemplateStructure } from '../types'
+import { TemplateComponent } from '../types'
 import { commercialTemplate } from '../../../assets/templates/commercial-template'
+import { basicTemplate } from '../../../assets/templates/basic-template'
+import { livingTemplate } from '../../../assets/templates/living-template'
 
 type TemplatePreviewProps = {
   component: TemplateComponent
@@ -35,8 +37,33 @@ function TemplatePreview({ component }: TemplatePreviewProps) {
   )
 }
 
-export function TemplateContent() {
-  const templateData: TemplateStructure = commercialTemplate
+type TemplateContentProps = {
+  selectedTemplateId: string | null
+}
+
+export function TemplateContent({ selectedTemplateId }: TemplateContentProps) {
+  const getTemplateData = () => {
+    switch (selectedTemplateId) {
+      case 'commercial':
+        return commercialTemplate
+      case 'basic':
+        return basicTemplate
+      case 'living':
+        return livingTemplate
+      default:
+        return null
+    }
+  }
+
+  const templateData = getTemplateData()
+
+  if (!templateData) {
+    return (
+      <div className="mt-16 md:mt-0 md:ml-72 p-6 md:p-8 flex items-center justify-center">
+        <p className="text-gray-400">템플릿을 선택해주세요.</p>
+      </div>
+    )
+  }
 
   return (
     <div className="mt-16 md:mt-0 md:ml-72 p-6 md:p-8">

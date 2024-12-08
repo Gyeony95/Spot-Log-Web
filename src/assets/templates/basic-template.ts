@@ -1,6 +1,6 @@
 import { TemplateStructure } from '../../pages/templates/types'
 
-export const commercialTemplate: TemplateStructure = {
+export const basicTemplate: TemplateStructure = {
   "templateTitle":"기본 임장 보고서",
   "templateContent":"기본 임장 보고서는 물건 개요, 시세 정보, 호재/악재, 메모를 체계적으로 기록해 임장 데이터를 간편하게 관리하고 분석할 수 있도록 돕는 템플릿입니다.",
   "template":[

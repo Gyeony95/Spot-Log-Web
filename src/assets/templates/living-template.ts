@@ -1,6 +1,6 @@
 import { TemplateStructure } from '../../pages/templates/types'
 
-export const commercialTemplate: TemplateStructure ={
+export const livingTemplate: TemplateStructure ={
   "templateTitle": "주거지 분석 보고서",
   "templateContent": "주거지 분석 보고서는 거주를 고려 중인 지역의 주변 환경, 생활 편의시설, 교통 상황 등을 체계적으로 정리하여 최적의 선택을 돕는 템플릿입니다.",
   "template": [

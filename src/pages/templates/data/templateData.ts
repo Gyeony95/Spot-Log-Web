@@ -8,14 +8,14 @@ export const templateData: Category[] = [
     title: '주택',
     templates: [
       {
-        id: 'house',
-        title: '단독주택',
-        description: '단독주택 임장 시 필요한 체크리스트입니다.'
+        id: 'basic',
+        title: '기본 임장 보고서',
+        description: ''
       },
       {
-        id: 'apartment',
-        title: '아파트',
-        description: '아파트 임장 시 필요한 체크리스트입니다.'
+        id: 'living',
+        title: '주거지 분석 보고서',
+        description: ''
       }
     ]
   },
@@ -25,14 +25,9 @@ export const templateData: Category[] = [
     title: '상가',
     templates: [
       {
-        id: 'retail',
-        title: '상가건물',
-        description: '상가건물 임장 시 필요한 체크리스트입니다.'
-      },
-      {
-        id: 'office',
-        title: '사무실',
-        description: '사무실 임장 시 필요한 체크리스트입니다.'
+        id: 'commercial',
+        title: '상업용 부동산 분석 보고서',
+        description: ''
       }
     ]
   }
