@@ -1,3 +1,4 @@
+import { TemplateHeader } from './components/TemplateHeader'
 import { TemplateSidebar } from './components/TemplateSidebar'
 import { TemplateContent } from './components/TemplateContent'
 import { useState } from 'react'
@@ -9,14 +10,17 @@ export default function TemplatesPage() {
 
   return (
     <div className="min-h-screen bg-gray-900">
-      <TemplateSidebar
-        categories={templateData}
-        activeCategory={activeCategory}
-        setActiveCategory={setActiveCategory}
-        isSidebarOpen={isSidebarOpen}
-        setIsSidebarOpen={setIsSidebarOpen}
-      />
-      <TemplateContent />
+      <TemplateHeader setIsSidebarOpen={setIsSidebarOpen} />
+      <div className="flex">
+        <TemplateSidebar
+          categories={templateData}
+          activeCategory={activeCategory}
+          setActiveCategory={setActiveCategory}
+          isSidebarOpen={isSidebarOpen}
+          setIsSidebarOpen={setIsSidebarOpen}
+        />
+        <TemplateContent />
+      </div>
     </div>
   )
 } 
