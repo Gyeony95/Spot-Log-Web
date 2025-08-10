@@ -5,6 +5,7 @@ import PrivacyHowDayPage from './pages/privacy_how_day/page'
 import TemplatesPage from './pages/templates/page'
 import WithdrawPage from './pages/withdraw/page'
 import PrivacyFanChantPage from './pages/privacy_fan_chant/page'
+import PrivacyKakaoAnalyticsPage from './pages/privacy_kko_analytics/page'
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
           <Route path="/privacy_fan_chant" element={<PrivacyFanChantPage />} />
           <Route path="/templates" element={<TemplatesPage />} />
           <Route path="/withdraw" element={<WithdrawPage />} />
+          <Route path="/privacy_kko_analytics" element={<PrivacyKakaoAnalyticsPage />} />
         </Routes>
       </div>
     </Router>
